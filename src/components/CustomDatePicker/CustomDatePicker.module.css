@@ -1,3 +1,12 @@
+:global(.react-datepicker) {
+    background-color: var(--card-bg) !important;
+    color: var(--text) !important;
+}
+
+:global(.react-datepicker__day) {
+    color: var(--text) !important;
+}
+
 :global(.react-datepicker__day-name) {
     font-size: 14px;
 }
@@ -12,6 +21,7 @@
 
 :global(.react-datepicker__day:hover) {
     background-color: var(--primary-hover) !important;
+    color: var(--primary) !important;
 }
 
 :global(.react-datepicker__day--today) {
@@ -22,7 +32,7 @@
 :global(.react-datepicker__day--selected),
 :global(.react-datepicker__day--keyboard-selected) {
     background-color: var(--primary);
-    color: var(--card-bg);
+    color: var(--card-bg) !important;
 }
 
 :global(.react-datepicker__day--selected:hover) {
@@ -30,13 +40,9 @@
     color: var(--text) !important;
 }
 
-:global(
-    .react-datepicker__time-container
-        .react-datepicker__time
-        .react-datepicker__time-box
-        ul.react-datepicker__time-list
-        li.react-datepicker__time-list-item
-) {
+:global(.react-datepicker__time-container .react-datepicker__time-list-item) {
+    background-color: var(--card-bg) !important;
+    color: var(--text) !important;
     height: auto;
     font-size: 14px;
 }
@@ -49,7 +55,7 @@
     .react-datepicker__time-container .react-datepicker__time-list-item:hover
 ) {
     background-color: var(--primary-hover) !important;
-    color: var(--text) !important;
+    color: var(--primary) !important;
 }
 
 :global(.react-datepicker__time) {
@@ -69,7 +75,6 @@
     padding: 0.5em !important;
 }
 
-/* ================= HEADER ================= */
 :global(.react-datepicker__header--time) {
     display: none;
 }
@@ -115,8 +120,6 @@
 .monthYear:hover {
     background: var(--primary-hover);
 }
-
-/* ================= DROPDOWN ================= */
 .dropdown {
     position: absolute;
     top: 85%;

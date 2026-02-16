@@ -15,7 +15,20 @@ const Form = () => {
     const formData = useAppSelector((state) => state.form.draft);
 
     const handleChange = (field: keyof Person, value: string | Date | null) => {
-        dispatch(updateField({ field, value: value as string }));
+        let stringValue = "";
+        if (value === null) {
+            stringValue = "";
+        } else if (typeof value === "string") {
+            stringValue = value;
+        } else {
+            if (field === "birthdate") {
+                stringValue = value.toISOString().split("T")[0];
+            } else {
+                stringValue = value.toISOString();
+            }
+        }
+
+        dispatch(updateField({ field, value: stringValue }));
     };
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
