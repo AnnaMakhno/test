@@ -23,18 +23,18 @@ const formatTime = (dateString: string) => {
         .replace(",", "");
 };
 
-const formatDateTime = (dateString: string) => {
-    if (!dateString) return "-";
-    return new Date(dateString)
-        .toLocaleString("ru-RU", {
-            day: "2-digit",
-            month: "2-digit",
-            year: "numeric",
-            hour: "2-digit",
-            minute: "2-digit",
-        })
-        .replace(",", "");
-};
+// const formatDateTime = (dateString: string) => {
+//     if (!dateString) return "-";
+//     return new Date(dateString)
+//         .toLocaleString("ru-RU", {
+//             day: "2-digit",
+//             month: "2-digit",
+//             year: "numeric",
+//             hour: "2-digit",
+//             minute: "2-digit",
+//         })
+//         .replace(",", "");
+// };
 
 const PersonCard: React.FC<PersonCardProps> = ({ person, onDelete }) => {
     return (
