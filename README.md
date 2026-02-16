@@ -1,6 +1,6 @@
 # Тестовое задание
 
-Демо: [https://test-one-psi-32.vercel.app/list](https://test-one-psi-32.vercel.app/list)
+Демо: [https://test-one-psi-32.vercel.app/](https://test-one-psi-32.vercel.app/)
 
 ## О проекте
 
