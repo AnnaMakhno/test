@@ -1,0 +1,19 @@
+.peopleListPage {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 32px;
+    background: var(--cardbg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px var(--primary-hover);
+}
+
+.peopleListPage h2 {
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.peopleList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

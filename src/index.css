@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text);
+    font-family: "Montserrat", system-ui, sans-serif;
+}
+
+body {
+    margin: 0 10px;
+}
+
+:root {
+    --primary: #4f46e5;
+    --primary-hover: #4438ca36;
+    --danger: #ef4444;
+    --danger-hover: #dc2626;
+    --bg: #f6f7fb;
+    --card-bg: #ffffff;
+    --text: #1f2937;
+    --secondary-text: #6b7280;
+    --border-color: #d1d5db;
+    --border-radius: 10px;
+}

@@ -1,0 +1,30 @@
+.personForm {
+    max-width: 520px;
+    margin: 40px auto;
+    padding: 30px;
+    background: var(--cardbg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px var(--primary-hover);
+}
+
+.personForm h2 {
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.dateGroup {
+    margin-bottom: 18px;
+}
+
+@media (max-width: 768px) {
+    .personForm {
+        margin: 20px;
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .personForm {
+        padding: 18px;
+    }
+}

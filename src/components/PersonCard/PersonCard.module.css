@@ -1,0 +1,45 @@
+.personCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg);
+    padding: 18px 22px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    margin-bottom: 16px;
+    box-shadow: 0 6px 18px var(--primary-hover);
+    transition: all 0.15s ease;
+}
+
+.personCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 26px var(--primary-hover);
+}
+
+.info {
+    /* display: block; */
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.info strong {
+    color: var(--primary);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions p {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+@media (max-width: 480px) {
+    .personCard {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}

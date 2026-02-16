@@ -1,0 +1,244 @@
+:global(.react-datepicker__day-name) {
+    font-size: 14px;
+}
+
+:global(.react-datepicker__day-name span) {
+    color: var(--primary) !important;
+}
+
+:global(.react-datepicker__day--outside-month) {
+    color: var(--secondary-text) !important;
+}
+
+:global(.react-datepicker__day:hover) {
+    background-color: var(--primary-hover) !important;
+}
+
+:global(.react-datepicker__day--today) {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+:global(.react-datepicker__day--selected),
+:global(.react-datepicker__day--keyboard-selected) {
+    background-color: var(--primary);
+    color: var(--card-bg);
+}
+
+:global(.react-datepicker__day--selected:hover) {
+    background-color: var(--primary-hover) !important;
+    color: var(--text) !important;
+}
+
+:global(
+    .react-datepicker__time-container
+        .react-datepicker__time
+        .react-datepicker__time-box
+        ul.react-datepicker__time-list
+        li.react-datepicker__time-list-item
+) {
+    height: auto;
+    font-size: 14px;
+}
+
+:global(.react-datepicker__time-list::-webkit-scrollbar) {
+    display: none;
+}
+
+:global(
+    .react-datepicker__time-container .react-datepicker__time-list-item:hover
+) {
+    background-color: var(--primary-hover) !important;
+    color: var(--text) !important;
+}
+
+:global(.react-datepicker__time) {
+    border-radius: var(--border-radius) !important;
+}
+
+:global(
+    .react-datepicker__time-container
+        .react-datepicker__time-list-item--selected
+) {
+    background-color: var(--primary) !important;
+    color: var(--card-bg) !important;
+    font-weight: 500 !important;
+}
+
+:global(.react-datepicker__input-container .react-datepicker__calendar-icon) {
+    padding: 0.5em !important;
+}
+
+/* ================= HEADER ================= */
+:global(.react-datepicker__header--time) {
+    display: none;
+}
+
+:global(.react-datepicker__header) {
+    padding: 0;
+}
+
+.customHeader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background: var(--card-bg);
+    border-radius: 6px;
+}
+
+.navButton {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 2px 6px;
+    border-radius: var(--border-radius);
+    transition: 0.2s;
+    margin-top: 0 !important;
+}
+
+.navButton:hover {
+    background: var(--primary-hover);
+}
+
+.monthYear {
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: var(--border-radius);
+    transition: 0.2s;
+}
+
+.monthYear:hover {
+    background: var(--primary-hover);
+}
+
+/* ================= DROPDOWN ================= */
+.dropdown {
+    position: absolute;
+    top: 85%;
+    left: 0;
+    width: 100%;
+    background: var(--card-bg);
+    border-bottom: 2px solid var(--primary);
+    padding: 8px;
+    z-index: 10;
+}
+
+.monthGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.monthItem {
+    text-align: center;
+    padding: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 13px;
+}
+
+.monthItem::first-letter {
+    text-transform: uppercase;
+}
+
+.monthItem:hover {
+    background: var(--primary-hover);
+    color: var(--text);
+}
+
+.yearList {
+    max-height: 140px;
+    overflow-y: auto;
+}
+
+.centerWrapper {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.monthYearPart {
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 6px 8px;
+    border-radius: var(--border-radius);
+    transition: 0.2s;
+}
+
+.monthYearPart::first-letter {
+    text-transform: uppercase;
+}
+
+.monthYearPart:hover {
+    background: var(--primary-hover);
+}
+
+.activeItem {
+    background: var(--primary);
+    color: var(--card-bg);
+}
+
+@media (max-width: 480px) {
+    :global(.react-datepicker__day-name) {
+        font-size: 12px;
+    }
+
+    :global(.react-datepicker__day) {
+        font-size: 12px;
+    }
+
+    :global(
+        .react-datepicker__time-container
+            .react-datepicker__time
+            .react-datepicker__time-box
+            ul.react-datepicker__time-list
+            li.react-datepicker__time-list-item
+    ) {
+        font-size: 12px;
+    }
+
+    .customHeader {
+        padding: 6px 10px;
+    }
+
+    .navButton {
+        font-size: 18px;
+        padding: 2px 4px;
+    }
+
+    .monthYear,
+    .monthYearPart {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+
+    .dropdown {
+        padding: 6px;
+    }
+
+    .monthGrid {
+        gap: 6px;
+        margin-bottom: 6px;
+    }
+
+    .monthItem {
+        font-size: 11px;
+        padding: 4px;
+    }
+
+    .yearList {
+        max-height: 120px;
+    }
+
+    .centerWrapper {
+        gap: 1px;
+    }
+}
